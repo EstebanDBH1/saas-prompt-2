@@ -17,7 +17,7 @@ import { Footer } from '@/components/home/footer/footer';
 export function HomePage() {
   const supabase = createClient();
   const { user } = useUserInfo(supabase);
-  const [country, setCountry] = useState('US');
+  const [country] = useState('US');
 
   return (
     <div className="bg-background min-h-screen">

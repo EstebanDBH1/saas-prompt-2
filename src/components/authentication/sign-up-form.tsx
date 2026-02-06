@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 import { AuthenticationForm } from '@/components/authentication/authentication-form';

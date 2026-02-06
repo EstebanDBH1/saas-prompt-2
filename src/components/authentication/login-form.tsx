@@ -1,11 +1,9 @@
 'use client';
 
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { login, loginAnonymously } from '@/app/login/actions';
+import { login } from '@/app/login/actions';
 import { useState } from 'react';
 import { AuthenticationForm } from '@/components/authentication/authentication-form';
-import { Separator } from '@/components/ui/separator';
 import { useToast } from '@/components/ui/use-toast';
 
 export function LoginForm() {
@@ -17,14 +15,6 @@ export function LoginForm() {
     login({ email, password }).then((data) => {
       if (data?.error) {
         toast({ description: 'Invalid email or password', variant: 'destructive' });
-      }
-    });
-  }
-
-  function handleAnonymousLogin() {
-    loginAnonymously().then((data) => {
-      if (data?.error) {
-        toast({ description: 'Something went wrong. Please try again', variant: 'destructive' });
       }
     });
   }

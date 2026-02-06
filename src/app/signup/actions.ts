@@ -31,7 +31,7 @@ export async function signup(data: FormData) {
       }
     );
 
-    const { data: userData, error: adminError } = await adminClient.auth.admin.createUser({
+    const { error: adminError } = await adminClient.auth.admin.createUser({
       email: data.email,
       password: data.password,
       email_confirm: true, // Auto-confirm email

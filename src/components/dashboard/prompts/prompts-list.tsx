@@ -7,9 +7,18 @@ import { useState } from 'react';
 import { Copy, Check } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
 
+interface Prompt {
+    id: string;
+    title: string;
+    description: string;
+    content: string;
+    tags?: string[];
+    price: string;
+}
+
 interface Props {
     hasSubscription: boolean;
-    prompts: any[];
+    prompts: Prompt[];
 }
 
 export function PromptsList({ hasSubscription, prompts }: Props) {
@@ -24,7 +33,7 @@ export function PromptsList({ hasSubscription, prompts }: Props) {
                 description: "Prompt copiado al portapapeles",
             });
             setTimeout(() => setCopiedId(null), 2000);
-        } catch (err) {
+        } catch {
             toast({
                 description: "Error al copiar",
                 variant: "destructive"

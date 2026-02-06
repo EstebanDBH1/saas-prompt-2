@@ -70,7 +70,7 @@ export default function TerminosPage() {
                     <section className="mb-8">
                         <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">7. Limitación de Responsabilidad</h2>
                         <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                            Banco de Prompts se proporciona "tal cual" sin garantías de ningún tipo. No nos hacemos responsables de los resultados obtenidos al utilizar nuestros prompts con herramientas de IA de terceros.
+                            Banco de Prompts se proporciona &quot;tal cual&quot; sin garantías de ningún tipo. No nos hacemos responsables de los resultados obtenidos al utilizar nuestros prompts con herramientas de IA de terceros.
                         </p>
                     </section>
 

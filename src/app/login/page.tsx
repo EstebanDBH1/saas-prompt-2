@@ -1,6 +1,4 @@
-import { LoginGradient } from '@/components/gradients/login-gradient';
 import '../../styles/login.css';
-import { LoginForm } from '@/components/authentication/login-form';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 

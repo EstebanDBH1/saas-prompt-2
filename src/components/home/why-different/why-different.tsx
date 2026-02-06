@@ -7,7 +7,7 @@ export function WhyDifferent() {
             <p className="text-sm md:text-base leading-relaxed text-muted-foreground max-w-xl mx-auto">
                 Cada prompt está diseñado con contexto, estructura y objetivo.
                 <br className="hidden md:block" />
-                Eso es lo que convierte una respuesta "ok" en una respuesta útil.
+                Eso es lo que convierte una respuesta &quot;ok&quot; en una respuesta útil.
             </p>
         </section>
     );
